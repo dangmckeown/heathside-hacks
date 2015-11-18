@@ -1,1 +1,23 @@
 
+//Do the larger sizes first and get progressively smaller
+
+
+@media only screen and (max-width 1024px){
+  //THINK: iPad in landscape
+  
+}
+
+@media only screen and (max-width 768px){
+  //THINK: iPad (portrait)
+  
+}
+
+@media only screen and (max-width 480px){
+  //THINK: Mobile phones in landscape
+  
+}
+
+@media only screen and (max-width 320px){
+   //THINK: Mobile phones in portrait
+  
+}
