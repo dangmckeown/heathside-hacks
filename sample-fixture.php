@@ -1,6 +1,6 @@
+<?php
+print <<<_html_
 
-<!DOCTYPE html>
-<html lang="en">
 <head>
 <title>London Heathside training</title>
 <base href="http://www.londonheathside.org.uk">
@@ -180,4 +180,6 @@
 </div>
 
 </body>
-</html>
+
+_html_;
+?>
