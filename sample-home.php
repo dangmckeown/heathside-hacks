@@ -1,6 +1,6 @@
+<?php
+print <<<_html_
 
-<!DOCTYPE html>
-<html lang="en">
 <head>
 <title>London Heathside news</title>
 <base href="http://www.londonheathside.org.uk">
@@ -198,4 +198,5 @@
 
 
 </body>
-</html>
+_html_;
+?>
