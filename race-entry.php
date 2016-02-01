@@ -4,7 +4,7 @@
 
 //access database !IMPORTANT
 //want to keep off our server as I'm not convinced by security
-include('database-connection-file.php);
+include('database-connection-file.php');
 
 //change the quote text for each event
 $event = "SEAA Road Relays 2016";
