@@ -7,6 +7,7 @@ $fh = fopen($resource,'rb');
 while(!feof($fh) && $row = fgetcsv($fh)){
   //check if first entry has date - if so, include it
 if(preg_match("/\d/",$row[0])){  
+  
 ?>
 <div class="fixture-details">
   <?php
@@ -15,15 +16,16 @@ if(preg_match("/\d/",$row[0])){
   echo "{$row[0]} | {$row[3]}<br />";
   echo "<a href='{$row[4]}'";
   //do external link if offsite
-  if(preg_match("/^http/"),$row[4]){
+  if(preg_match("/^http/",$row[4])){
   echo " target='_blank'";
-  }
+  }//end if(preg_match("/^http/"
   echo ">More details &rarr;</a>";
 
   ?>
 </div>
 <?php
-}
-}
+
+} //end if(preg_match("/\d/"
+} //end while(!feof($fh)
 
 fclose($fh);
