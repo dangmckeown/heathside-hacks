@@ -5,5 +5,18 @@ $resource = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQKlbS5a9jczvCfMhPu
 $fh = fopen($resource,'rb');
 
 while(!feof($fh) && $row = fgetcsv($fh)){
-  var_dump($row);
+  ?>
+<div class="fixture-details">
+  <?php
+
+  echo "<b>{$row[1]}</b> ({$row[2]}) <br />";
+  echo "{$row[0]} | {$row[3]}";
+  echo "<a href='{$row[4]}'>More details &rarr;</a>";
+
+  ?>
+</div>
+<?php
+
 }
+
+fclose($fh);
